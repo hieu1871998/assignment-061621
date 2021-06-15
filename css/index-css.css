@@ -1,0 +1,150 @@
+@font-face {
+    font-family: GoogleSans;
+    src: url(fonts/GoogleSans-Regular.ttf);
+}
+* {box-sizing: border-box;}
+html, body {
+    font-family: GoogleSans;
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+}
+.box-shadow {
+    box-shadow: 0 1px 5px #333333;
+}
+.rounded-corner {
+    border-radius: 2px;
+}
+.text-title {
+    color: #333333;
+}
+.text-subtitle {
+    color: #777777;
+}
+.header {
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+}
+.header .header-text-container {
+    width: 100%;
+}
+.header .header-text-container .header-title {
+    padding-left: 10px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.header .header-text-container .header-subtitle {
+    padding-left: 18px;
+    font-size: 24px;
+}
+.main-layout {
+    display: block;
+    width: 100%;
+    padding: 20px;
+}
+.main-layout .picture-container {
+    display: flex;
+    width: 100%;
+}
+.main-layout .picture-container .picture {
+    width: 25%;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.main-layout .picture-container .picture:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+.main-layout .popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 64px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.main-layout .popup .popup-content {
+    width: 60%;
+    margin: auto;
+    padding: 24px;
+    background-color: #ffffff;
+}
+.main-layout .popup .popup-content .popup-header {
+    display: none;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 10px;
+}
+.main-layout .popup .popup-content .popup-header .popup-title {
+    font-size: 32px;
+}
+.main-layout .popup .popup-content .popup-header .popup-close-btn {
+    color: #999999;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 32px;
+    top: 0;
+    float: right;
+    transition: 0.5s;  
+}
+.main-layout .popup .popup-content .popup-header .popup-close-btn:hover,
+.main-layout .popup .popup-content .popup-header .popup-close-btn:focus {
+    cursor: pointer;
+    color: #333333;
+}
+.main-layout .popup .popup-content .current-picture {
+    padding-top: 10px;
+    width: 100%;
+}
+.main-layout .popup .popup-content .slideshow {
+    display: flex;
+    padding: 20px;
+    padding-bottom: 0;
+    width: 100%;
+}
+.main-layout .popup .popup-content .slideshow .slideshow-button {
+    width: 48px;
+    height: 48px;
+    background-color: #71afe5;
+    color: #ffffff;
+    font-size: 48px;
+    line-height: 44px;
+    text-align: center;
+    transition: 0.5s;
+}
+.main-layout .popup .popup-content .slideshow .prev {
+    float: left;
+}
+.main-layout .popup .popup-content .slideshow .slideshow-button:hover,
+.main-layout .popup .popup-content .slideshow .slideshow-button:focus {
+    cursor: pointer;
+    background-color: #0078d4;
+    color: #ffffff;
+}
+.main-layout .popup .popup-content .slideshow .slideshow-picture-container {
+    margin: auto;
+    width: 70%;
+}
+.main-layout .popup .popup-content .slideshow .slideshow-picture-container .row {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+}
+
+.main-layout .popup .popup-content .slideshow .slideshow-picture-container .row .slideshow-picture {
+    width: 25%;
+    margin: auto;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.main-layout .popup .popup-content .slideshow .slideshow-picture-container .slideshow-picture:hover,
+.main-layout .popup .popup-content .slideshow .slideshow-picture-container .slideshow-picture:focus {
+    cursor: pointer;
+    opacity: 1 !important;
+}
