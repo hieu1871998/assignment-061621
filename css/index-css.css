@@ -114,23 +114,23 @@ html, body {
     width: 48px;
     height: 48px;
     padding: 0;
-    background-color: #71afe5;
+    background-color: #0078d4;
     color: #ffffff;
     font-size: 48px;
     line-height: 44px;
     text-align: center;
-    transition: 0.5s;
+    transition: 0.2s;
     overflow: hidden;
 }
 .main-layout .popup .popup-content .slideshow .slideshow-button:hover,
 .main-layout .popup .popup-content .slideshow .slideshow-button:focus {
     cursor: pointer;
-    background-color: #0078d4;
+    background-color: #005a9e;
     color: #ffffff;
 }
 .main-layout .popup .popup-content .slideshow .slideshow-button:after {
     content: "";
-    background: #c7e0f4;
+    background: #71afe5;
     display: block;
     position: absolute;
     padding-top: 300%;
