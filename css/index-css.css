@@ -110,23 +110,41 @@ html, body {
     width: 100%;
 }
 .main-layout .popup .popup-content .slideshow .slideshow-button {
+    position: relative;
     width: 48px;
     height: 48px;
+    padding: 0;
     background-color: #71afe5;
     color: #ffffff;
     font-size: 48px;
     line-height: 44px;
     text-align: center;
     transition: 0.5s;
-}
-.main-layout .popup .popup-content .slideshow .prev {
-    float: left;
+    overflow: hidden;
 }
 .main-layout .popup .popup-content .slideshow .slideshow-button:hover,
 .main-layout .popup .popup-content .slideshow .slideshow-button:focus {
     cursor: pointer;
     background-color: #0078d4;
     color: #ffffff;
+}
+.main-layout .popup .popup-content .slideshow .slideshow-button:after {
+    content: "";
+    background: #c7e0f4;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 300%;
+    margin-left: -20px;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.6s;
+}
+.main-layout .popup .popup-content .slideshow .slideshow-button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
 }
 .main-layout .popup .popup-content .slideshow .slideshow-picture-container {
     margin: auto;
@@ -139,6 +157,7 @@ html, body {
 }
 
 .main-layout .popup .popup-content .slideshow .slideshow-picture-container .row .slideshow-picture {
+    position: relative;
     width: 25%;
     margin: auto;
     opacity: 0.5;
